@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-800 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-church-blue;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-semibold transition-all duration-300 inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-church-blue text-white hover:bg-church-blue-dark;
+  }
+  
+  .btn-secondary {
+    @apply bg-church-gold text-church-blue-dark hover:bg-opacity-80;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-church-blue text-church-blue hover:bg-church-blue hover:text-white;
+  }
+  
+  .section-title {
+    @apply text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-center mb-8 text-church-blue;
+  }
+  
+  .section-subtitle {
+    @apply text-xl sm:text-2xl font-serif text-church-purple max-w-3xl mx-auto text-center mb-12;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-church-blue focus:border-transparent;
+  }
+  
+  .nav-link {
+    @apply text-gray-100 hover:text-church-gold transition-colors duration-300;
+  }
+  
+  .nav-link.active {
+    @apply text-church-gold;
+  }
+  
+  .hero-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-50;
+  }
+  
+  .parallax-bg {
+    @apply bg-fixed bg-center bg-cover;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
