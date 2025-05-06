@@ -155,6 +155,7 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
     </motion.div>
+    
   );
 };
 
