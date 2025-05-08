@@ -86,58 +86,31 @@ const SermonCard: React.FC<SermonCardProps> = ({
 const SermonsPage: React.FC = () => {
   const sermons = [
     {
-      image: "https://images.pexels.com/photos/8107197/pexels-photo-8107197.jpeg",
-      title: "The Power of God's Prevailing Word",
+      image: "./public/bishop2.JPG",
+      title: "The Value Of A Sacrifice",
       preacher: "Bishop Dr. Robert Njiru",
-      date: "June 12, 2024",
-      duration: "48 minutes",
-      description: "Discover how God's Word can transform your life and bring breakthrough in every area.",
-      videoUrl: "https://youtube.com/watch?v=example1"
+      date: "Dec 11, 2022",
+      duration: "37 minutes",
+      description: ".",
+      videoUrl: "https://youtu.be/e3ornIyIeq8?si=KFW4wHL_dsf7-94H"
     },
     {
-      image: "https://images.pexels.com/photos/2774578/pexels-photo-2774578.jpeg",
-      title: "Walking in Divine Favor",
-      preacher: "Rev. Leah Njiru",
-      date: "June 5, 2024",
-      duration: "42 minutes",
-      description: "Learn how to position yourself for God's favor and walk in His blessings.",
-      videoUrl: "https://youtube.com/watch?v=example2"
-    },
-    {
-      image: "https://images.pexels.com/photos/1487956/pexels-photo-1487956.jpeg",
-      title: "Activating Your Faith",
+      image: "./public/bishop1.JPG",
+      title: "Look At The Man In The Middle",
       preacher: "Bishop Dr. Robert Njiru",
-      date: "May 29, 2024",
-      duration: "51 minutes",
-      description: "Understanding how to activate and exercise your faith for supernatural results.",
-      videoUrl: "https://youtube.com/watch?v=example3"
+      date: "April 26, 2025",
+      duration: "22 minutes",
+      description: ".",
+      videoUrl: "https://www.youtube.com/live/zUviqB12MeA?si=t_xgppEN5GyYWn8R"
     },
     {
-      image: "https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg",
-      title: "The Power of Prayer and Fasting",
-      preacher: "Rev. Leah Njiru",
-      date: "May 22, 2024",
-      duration: "45 minutes",
-      description: "Exploring the spiritual disciplines of prayer and fasting for breakthrough.",
-      videoUrl: "https://youtube.com/watch?v=example4"
-    },
-    {
-      image: "https://images.pexels.com/photos/3823207/pexels-photo-3823207.jpeg",
-      title: "Living in God's Purpose",
+      image: "./public/bishop3.JPG",
+      title: "Our God Of A Second Chance",
       preacher: "Bishop Dr. Robert Njiru",
-      date: "May 15, 2024",
-      duration: "47 minutes",
-      description: "Discovering and walking in God's divine purpose for your life.",
-      videoUrl: "https://youtube.com/watch?v=example5"
-    },
-    {
-      image: "https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg",
-      title: "The Power of Unity",
-      preacher: "Rev. Leah Njiru",
-      date: "May 8, 2024",
-      duration: "44 minutes",
-      description: "Understanding the strength and blessing that comes through unity in the body of Christ.",
-      videoUrl: "https://youtube.com/watch?v=example6"
+      date: "May 3, 2025",
+      duration: "30 minutes",
+      description: ".",
+      videoUrl: "https://www.youtube.com/live/N-G7CiG9Oeo?si=JlvO9I9HRFTA9849"
     }
   ];
 
@@ -161,17 +134,6 @@ const SermonsPage: React.FC = () => {
       />
 
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-xl mx-auto mb-12">
-            <div className="relative">
-              <input
-                type="text"
-                placeholder="Search sermons..."
-                className="w-full px-4 py-3 pl-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-church-blue focus:border-transparent"
-              />
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
-            </div>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sermons.map((sermon, index) => (
@@ -186,13 +148,6 @@ const SermonsPage: React.FC = () => {
                 videoUrl={sermon.videoUrl}
               />
             ))}
-          </div>
-
-          <div className="mt-12 text-center">
-            <button className="btn btn-primary">
-              Load More Sermons
-            </button>
-          </div>
         </div>
       </section>
     </motion.div>

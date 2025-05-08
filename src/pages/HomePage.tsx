@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
       transition={{ duration: 0.5 }}
     >
       <Helmet>
-        <title>Prevailing Word Church Ruiru - A Christ-centered Sanctuary</title>
+        <title>Prevailing Word Church Ruiru - A Vibrant Church Of Thousands</title>
         <meta name="description" content="Welcome to Prevailing Word Church Ruiru - A vibrant, spirit-filled, and Christ-centered sanctuary led by Bishop Dr. Robert Njiru & Rev. Leah Njiru" />
       </Helmet>
 

@@ -9,18 +9,18 @@ const LivestreamPage: React.FC = () => {
   const upcomingServices = [
     {
       day: "Sunday",
-      time: "8:00 AM - 12:00 PM",
+      time: "11:00 AM - 1:30 PM",
       name: "Main Service"
     },
     {
-      day: "Wednesday",
+      day: "Monday",
       time: "5:30 PM - 7:00 PM",
-      name: "Bible Study"
+      name: "Thanksgiving Prayers"
     },
     {
-      day: "Friday",
-      time: "6:00 PM - 8:00 PM",
-      name: "Prayer Night"
+      day: "Thursday",
+      time: "5:30 PM - 7:00 PM",
+      name: "Overflow Hour(DCS)"
     }
   ];
 
@@ -49,7 +49,7 @@ const LivestreamPage: React.FC = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
               <div className="aspect-w-16 aspect-h-9">
                 <ReactPlayer
-                  url="https://www.youtube.com/watch?v=your-stream-id"
+                  url="https://www.facebook.com/share/v/16NJM4UmPX/"
                   width="100%"
                   height="100%"
                   controls

@@ -39,7 +39,7 @@ const GivingMethod: React.FC<GivingMethodProps> = ({ icon, title, description, i
 
 const GivingPage: React.FC = () => {
   const givingMethods = [
-    {
+    /*{
       icon: <CreditCard size={40} />,
       title: "Online Giving",
       description: "Make a secure donation through our online payment system.",
@@ -49,29 +49,30 @@ const GivingPage: React.FC = () => {
         "Fill in your payment details",
         "Receive an instant confirmation"
       ]
-    },
+    },*/
     {
       icon: <Smartphone size={40} />,
-      title: "Mobile Money",
-      description: "Give easily using M-PESA or other mobile money services.",
+      title: "Tithes and Offrerings",
+      description: "Pay your Tithes and Offerings using M-PESA",
       instructions: [
         "Go to M-PESA menu",
         "Select 'Pay Bill'",
-        "Enter Business No: 123456",
-        "Account: Your Name",
-        "Enter amount and complete"
+        "Enter Business No: 222118",
+        "Account: LING#",
+        "Enter amount and complete",
+        "Or Use Mpesa Send Money To 0114 574 275"
       ]
     },
     {
       icon: <Building2 size={40} />,
-      title: "Bank Transfer",
-      description: "Make a direct bank transfer to our church account.",
+      title: "Supporting This Year's Project",
+      description: "Support this year's project of buying a GOSPEL TRUCK for evangelism.",
       instructions: [
-        "Bank: Example Bank",
-        "Account Name: Prevailing Word Church",
-        "Account No: 1234567890",
-        "Branch: Ruiru",
-        "Swift Code: EXBKKENA"
+          "Go to M-PESA menu",
+          "Select 'Pay Bill'",
+          "Enter Business No: 222118",
+          "Account: PREV#",
+          "Enter amount and complete"
       ]
     }
   ];
@@ -121,7 +122,7 @@ const GivingPage: React.FC = () => {
             ))}
           </div>
 
-          <div className="max-w-3xl mx-auto">
+           <div className="max-w-3xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-serif font-bold text-church-blue mb-6 text-center">
                 Give Now
@@ -198,7 +199,9 @@ const GivingPage: React.FC = () => {
 
             <div className="mt-8 text-center text-gray-600">
               <p>Need help with giving? Contact us at:</p>
-              <p className="font-semibold">finance@prevailingwordchurch.org</p>
+               <p className="font-semibold">
+                    <a href="tel:0114574275" className="text-church-blue hover:underline">0114 574 275</a>
+               </p>
             </div>
           </div>
         </div>
