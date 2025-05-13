@@ -89,7 +89,7 @@ const LatestSermons: React.FC = () => {
 
   const sermons = [
     {
-      image: "./public/bishop2.JPG",
+      image: "/bishop2.JPG",
       title: "The Value Of A Sacrifice",
       preacher: "Bishop Dr. Robert Njiru",
       date: "Dec 11, 2022",
@@ -97,7 +97,7 @@ const LatestSermons: React.FC = () => {
       videoUrl: "https://youtu.be/e3ornIyIeq8?si=KFW4wHL_dsf7-94H"
     },
     {
-      image: "./public/bishop1.JPG",
+      image: "/bishop1.JPG",
       title: "Look At The Man In The Middle",
       preacher: "Bishop Dr. Robert Njiru",
       date: "April 26, 2025",
@@ -105,7 +105,7 @@ const LatestSermons: React.FC = () => {
       videoUrl: "https://www.youtube.com/live/zUviqB12MeA?si=t_xgppEN5GyYWn8R"
     },
     {
-      image: "./public/bishop3.JPG",
+      image: "/bishop3.JPG",
       title: "Our God Of A Second Chance",
       preacher: "Bishop Dr. Robert Njiru",
       date: "May 3, 2025",

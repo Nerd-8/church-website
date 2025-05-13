@@ -99,7 +99,7 @@ const EventsPage: React.FC = () => {
         subtitle="Join Us for Life-Changing Experiences"
         scriptureText="Not forsaking the assembling of ourselves together, as the manner of some is; but exhorting one another."
         scriptureReference="Hebrews 10:25"
-        backgroundVideo="/Recap1.mp4" // Replace with your video path
+        backgroundVideo="/Recap3.MP4" // Replace with your video path
       />
 
       <motion.section

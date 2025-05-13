@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         <div className="flex justify-between items-center py-4">
         <Link to="/" className="flex items-center space-x-2">
           <img 
-           src="/logo.png" 
+           src="/CHURCH LOGO.png" 
            alt="Church Logo" 
            className="h-20 w-20" 
          />

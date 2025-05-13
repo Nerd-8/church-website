@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Play, Calendar, Clock, User, Search } from 'lucide-react';
+import { Play, Calendar, Clock, User } from 'lucide-react';
+import ReactPlayer from 'react-player';
 import PageBanner from '../components/common/PageBanner';
-import SectionTitle from '../components/common/SectionTitle';
 
 interface SermonCardProps {
   image: string;
@@ -51,7 +51,7 @@ const SermonCard: React.FC<SermonCardProps> = ({
 
       <div className="p-6">
         <h3 className="text-xl font-serif font-bold mb-2">{title}</h3>
-        
+
         <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-4">
           <div className="flex items-center">
             <User size={16} className="mr-1" />
@@ -86,7 +86,7 @@ const SermonCard: React.FC<SermonCardProps> = ({
 const SermonsPage: React.FC = () => {
   const sermons = [
     {
-      image: "./public/bishop2.JPG",
+      image: "/bishop2.JPG",
       title: "The Value Of A Sacrifice",
       preacher: "Bishop Dr. Robert Njiru",
       date: "Dec 11, 2022",
@@ -95,7 +95,7 @@ const SermonsPage: React.FC = () => {
       videoUrl: "https://youtu.be/e3ornIyIeq8?si=KFW4wHL_dsf7-94H"
     },
     {
-      image: "./public/bishop1.JPG",
+      image: "/bishop1.JPG",
       title: "Look At The Man In The Middle",
       preacher: "Bishop Dr. Robert Njiru",
       date: "April 26, 2025",
@@ -104,7 +104,7 @@ const SermonsPage: React.FC = () => {
       videoUrl: "https://www.youtube.com/live/zUviqB12MeA?si=t_xgppEN5GyYWn8R"
     },
     {
-      image: "./public/bishop3.JPG",
+      image: "/bishop3.JPG",
       title: "Our God Of A Second Chance",
       preacher: "Bishop Dr. Robert Njiru",
       date: "May 3, 2025",
@@ -123,18 +123,39 @@ const SermonsPage: React.FC = () => {
     >
       <Helmet>
         <title>Sermons - Prevailing Word Church Ruiru</title>
-        <meta name="description" content="Watch and listen to powerful sermons from Prevailing Word Church Ruiru. Be transformed by the Word of God through our anointed messages." />
+        <meta
+          name="description"
+          content="Watch and listen to powerful sermons from Prevailing Word Church Ruiru. Be transformed by the Word of God through our anointed messages."
+        />
       </Helmet>
 
-      <PageBanner
-        title="Sermons"
-        subtitle="Be transformed by the renewing of your mind through God's Word"
-        scriptureText="So faith comes from hearing, and hearing through the word of Christ."
-        scriptureReference="Romans 10:17"
-      />
+      {/* Hero Section with Video Background */}
+      <motion.section
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="relative h-[70vh] flex items-center justify-center text-white"
+      >
+        <video
+          className="absolute inset-50 w-full h-fit object-cover"
+          src="/Bshort.mp4" // Replace with your video file path
+          autoPlay
+          loop
+          muted
+        />
+        <div className="bg-black/50 absolute inset-0"></div>
+        <div className="relative z-10 text-center max-w-2xl px-4">
+          <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">Sermons</h1>
+          <p className="text-lg mb-2">Be transformed by the renewing of your mind through God's Word</p>
+          <blockquote className="italic text-sm">
+            “So faith comes from hearing, and hearing through the word of Christ.”<br />
+            <span className="text-church-gold font-semibold">Romans 10:17</span>
+          </blockquote>
+        </div>
+      </motion.section>
 
       <section className="py-20 bg-gray-50">
-
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sermons.map((sermon, index) => (
               <SermonCard
@@ -148,6 +169,7 @@ const SermonsPage: React.FC = () => {
                 videoUrl={sermon.videoUrl}
               />
             ))}
+          </div>
         </div>
       </section>
     </motion.div>

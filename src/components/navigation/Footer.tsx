@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
              <img 
-              src="./public/logo.png" 
+              src="/CHURCH LOGO.png" 
               alt="Church Logo" 
               className="h-20 w-20" 
             />

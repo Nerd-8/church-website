@@ -14,17 +14,17 @@ const GalleryPage: React.FC = () => {
     {
       id: 1,
       title: "Sunday Worship Service",
-      googlePhotosLink: "https://photos.app.goo.gl/exampleLink1", // Replace with actual Google Photos link
+      googlePhotosLink: "#", // Replace with actual Google Photos link
     },
     {
       id: 2,
       title: "Prevailers conference",
-      googlePhotosLink: "https://photos.app.goo.gl/exampleLink2", // Replace with actual Google Photos link
+      googlePhotosLink: "#", // Replace with actual Google Photos link
     },
     {
       id: 3,
       title: "youth explosion service",
-      googlePhotosLink: "https://photos.app.goo.gl/exampleLink3", // Replace with actual Google Photos link
+      googlePhotosLink: "#", // Replace with actual Google Photos link
     },
   ];
 

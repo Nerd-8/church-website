@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { CreditCard, Smartphone, Building2, Heart } from 'lucide-react';
+import { Smartphone, Building2, Heart } from 'lucide-react';
 import PageBanner from '../components/common/PageBanner';
 
 interface GivingMethodProps {
@@ -39,38 +39,27 @@ const GivingMethod: React.FC<GivingMethodProps> = ({ icon, title, description, i
 const GivingPage: React.FC = () => {
   const givingMethods = [
     {
-      icon: <CreditCard size={40} />,
-      title: "Online Giving",
-      description: "Make a secure donation through our online payment system.",
-      instructions: [
-        "Click the 'Give Now' button below",
-        "Enter your donation amount",
-        "Fill in your payment details",
-        "Receive an instant confirmation"
-      ]
-    },
-    {
       icon: <Smartphone size={40} />,
-      title: "Mobile Money",
-      description: "Give easily using M-PESA or other mobile money services.",
+      title: "Tithes, Offerings & Gifts",
+      description: "Give easily using M-PESA;",
       instructions: [
         "Go to M-PESA menu",
         "Select 'Pay Bill'",
-        "Enter Business No: 123456",
-        "Account: Your Name",
-        "Enter amount and complete"
+        "Enter Business No: 222118",
+        "Account: LING#",
+        "Or Send Money To: 0114 574 275"
       ]
     },
     {
       icon: <Building2 size={40} />,
-      title: "Bank Transfer",
-      description: "Make a direct bank transfer to our church account.",
+      title: "Supporting This Year's Development Project - (Purchasing The Gospel Truck)",
+      description: "Make a direct bank transfer through:",
       instructions: [
-        "Bank: Example Bank",
-        "Account Name: Prevailing Word Church",
-        "Account No: 1234567890",
-        "Branch: Ruiru",
-        "Swift Code: EXBKKENA"
+        "Go to M-PESA menu",
+        "Select 'Pay Bill'",
+        "Enter Business No: 222118",
+        "Account: PREV#",
+        "Enter Amount and complete the transaction"
       ]
     }
   ];
@@ -122,7 +111,11 @@ const GivingPage: React.FC = () => {
 
           <div className="mt-8 text-center text-gray-600">
             <p>Need help with giving? Contact us at:</p>
-            <p className="font-semibold">finance@prevailingwordchurch.org</p>
+            <p className="font-semibold">
+              <a href="tel:0114574275" className="text-church-blue hover:underline">
+                       0114 574 275
+               </a>
+            </p>
           </div>
         </div>
       </section>
