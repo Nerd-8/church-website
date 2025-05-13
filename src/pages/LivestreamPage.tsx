@@ -49,7 +49,7 @@ const LivestreamPage: React.FC = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
               <div className="aspect-w-16 aspect-h-9">
                 <ReactPlayer
-                  url="https://www.facebook.com/share/v/16NJM4UmPX/"
+                  url="https://www.youtube.com/live/3qHs9WKxvbY?si=42ZGeTYZ7TgKrXi7"
                   width="100%"
                   height="100%"
                   controls
@@ -131,10 +131,7 @@ const LivestreamPage: React.FC = () => {
                       <span className="w-2 h-2 bg-church-gold rounded-full mr-2"></span>
                       Join our online prayer community
                     </li>
-                    <li className="flex items-center text-gray-700">
-                      <span className="w-2 h-2 bg-church-gold rounded-full mr-2"></span>
-                      Sign up for our newsletter
-                    </li>
+                    
                   </ul>
                   
                   <div className="mt-6">

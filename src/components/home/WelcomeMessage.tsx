@@ -48,14 +48,14 @@ const WelcomeMessage: React.FC = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src="./public/bishop2.JPG" 
+                src="/Bishop-and-Rev.JPG" 
                 alt="Bishop Dr. Robert Njiru & Rev. Leah Njiru" 
                 className="w-full h-auto"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-church-blue text-white p-4 rounded-lg shadow-lg hidden md:block">
-              <p className="text-sm font-medium">Senior Pastor</p>
-              <p className="text-lg font-serif">Bishop Dr.Robert Njiru</p>
+              <p className="text-sm font-medium">Preciding Ministers</p>
+              <p className="text-lg font-serif">Bishop Dr.Robert and Rev Leah Njiru</p>
             </div>
           </motion.div>
 
@@ -69,13 +69,12 @@ const WelcomeMessage: React.FC = () => {
             </h2>
             
             <div className="md:hidden mb-6 bg-church-blue text-white p-4 rounded-lg shadow-lg inline-block">
-              <p className="text-sm font-medium">Senior Pastor</p>
-              <p className="text-lg font-serif">Bishop Dr. Robert Njiru</p>
+              <p className="text-sm font-medium">Preciding Ministers</p>
+              <p className="text-lg font-serif">Bishop Dr. Robert & Rev Leah Njiru</p>
             </div>
             
             <p className="text-gray-700 mb-4 text-lg">
-              We are delighted that you have chosen to visit our website and learn more about Prevailing Word Church Ruiru. Our church is a place where people can meet Jesus, engage in life-giving community, and grow in their faith.
-            </p>
+              We are delighted that you have chosen to visit our website and learn more about Prevailing Word Church Ruiru.</p>
             
             <p className="text-gray-700 mb-6 text-lg">
               Whether you're seeking to deepen your relationship with God, looking for a community to belong to, or simply curious about Christianity, we welcome you with open arms. Come as you are and experience God's unconditional love and transformative power.

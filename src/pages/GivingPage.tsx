@@ -21,7 +21,6 @@ const GivingMethod: React.FC<GivingMethodProps> = ({ icon, title, description, i
     >
       <div className="text-church-blue mb-4">
         {icon}
-      
       </div>
       <h3 className="text-xl font-serif font-bold mb-3">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
@@ -39,7 +38,7 @@ const GivingMethod: React.FC<GivingMethodProps> = ({ icon, title, description, i
 
 const GivingPage: React.FC = () => {
   const givingMethods = [
-    /*{
+    {
       icon: <CreditCard size={40} />,
       title: "Online Giving",
       description: "Make a secure donation through our online payment system.",
@@ -49,30 +48,29 @@ const GivingPage: React.FC = () => {
         "Fill in your payment details",
         "Receive an instant confirmation"
       ]
-    },*/
+    },
     {
       icon: <Smartphone size={40} />,
-      title: "Tithes and Offrerings",
-      description: "Pay your Tithes and Offerings using M-PESA",
+      title: "Mobile Money",
+      description: "Give easily using M-PESA or other mobile money services.",
       instructions: [
         "Go to M-PESA menu",
         "Select 'Pay Bill'",
-        "Enter Business No: 222118",
-        "Account: LING#",
-        "Enter amount and complete",
-        "Or Use Mpesa Send Money To 0114 574 275"
+        "Enter Business No: 123456",
+        "Account: Your Name",
+        "Enter amount and complete"
       ]
     },
     {
       icon: <Building2 size={40} />,
-      title: "Supporting This Year's Project",
-      description: "Support this year's project of buying a GOSPEL TRUCK for evangelism.",
+      title: "Bank Transfer",
+      description: "Make a direct bank transfer to our church account.",
       instructions: [
-          "Go to M-PESA menu",
-          "Select 'Pay Bill'",
-          "Enter Business No: 222118",
-          "Account: PREV#",
-          "Enter amount and complete"
+        "Bank: Example Bank",
+        "Account Name: Prevailing Word Church",
+        "Account No: 1234567890",
+        "Branch: Ruiru",
+        "Swift Code: EXBKKENA"
       ]
     }
   ];
@@ -110,7 +108,7 @@ const GivingPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {givingMethods.map((method, index) => (
               <GivingMethod
                 key={index}
@@ -122,87 +120,9 @@ const GivingPage: React.FC = () => {
             ))}
           </div>
 
-           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-2xl font-serif font-bold text-church-blue mb-6 text-center">
-                Give Now
-              </h3>
-              
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="amount" className="block text-gray-700 mb-2">
-                    Amount (KES)
-                  </label>
-                  <input
-                    type="number"
-                    id="amount"
-                    className="input-field"
-                    placeholder="Enter amount"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="giving-type" className="block text-gray-700 mb-2">
-                    Type of Giving
-                  </label>
-                  <select id="giving-type" className="input-field">
-                    <option value="tithe">Tithe</option>
-                    <option value="offering">Offering</option>
-                    <option value="project">Church Project</option>
-                    <option value="missions">Missions</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-2">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="input-field"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="input-field"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="input-field"
-                    required
-                  />
-                </div>
-
-                <button type="submit" className="btn btn-primary w-full">
-                  Proceed to Give
-                </button>
-              </form>
-            </div>
-
-            <div className="mt-8 text-center text-gray-600">
-              <p>Need help with giving? Contact us at:</p>
-               <p className="font-semibold">
-                    <a href="tel:0114574275" className="text-church-blue hover:underline">0114 574 275</a>
-               </p>
-            </div>
+          <div className="mt-8 text-center text-gray-600">
+            <p>Need help with giving? Contact us at:</p>
+            <p className="font-semibold">finance@prevailingwordchurch.org</p>
           </div>
         </div>
       </section>

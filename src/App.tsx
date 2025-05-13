@@ -31,7 +31,7 @@ function App() {
           <Route path="livestream" element={<LivestreamPage />} />
           <Route path="events" element={<EventsPage />} />
           <Route path="giving" element={<GivingPage />} />
-          <Route path="prayer-requests" element={<PrayerRequestsPage />} />
+          <Route path="prayer" element={<PrayerRequestsPage />} />
           <Route path="gallery" element={<GalleryPage />} />
           <Route path="devotional" element={<DevotionalPage />} />
           <Route path="contact" element={<ContactPage />} />

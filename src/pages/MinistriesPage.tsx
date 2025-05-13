@@ -44,83 +44,45 @@ const MinistriesPage: React.FC = () => {
       title: "Youth Ministry",
       description: "Empowering young people to discover their purpose and develop their faith journey.",
       details: [
-        "Weekly youth services and Bible study",
-        "Leadership development programs",
-        "Youth camps and retreats",
-        "Mentorship opportunities",
-        "Community outreach projects"
+        "Godly Youth Connect (G.Y.C) - Happens Every Month",
+        "Youth Explosion Service - Happens Every Sunday",
       ]
     },
     {
       icon: <Heart size={40} />,
-      title: "Women's Ministry",
+      title: "Daughters Of The King (D.O.K)",
       description: "Creating a supportive community where women grow spiritually and form lasting friendships.",
       details: [
-        "Monthly women's fellowship",
-        "Prayer and intercession groups",
-        "Skills development workshops",
-        "Annual women's conference",
-        "Community service initiatives"
+        "Monthly D.O.K's fellowship",
+        "Monthly Prayer and intercession",
+        "Annual women of honor conference"
       ]
     },
     {
       icon: <UserPlus size={40} />,
-      title: "Men's Fellowship",
+      title: "Prevailing Fathers",
       description: "Equipping men to lead with integrity, strength, and compassion in all areas of life.",
       details: [
-        "Monthly men's breakfast meetings",
-        "Leadership seminars",
-        "Mentorship programs",
-        "Family life workshops",
-        "Business networking events"
-      ]
-    },
-    {
-      icon: <HelpingHand size={40} />,
-      title: "Intercessory Team",
-      description: "Dedicated to prayer, spiritual warfare, and standing in the gap for others.",
-      details: [
-        "Daily prayer sessions",
-        "Weekly prayer and fasting",
-        "Prayer chain ministry",
-        "Prophetic intercession",
-        "Prayer counseling"
-      ]
-    },
-    {
-      icon: <Music size={40} />,
-      title: "Worship Team",
-      description: "Leading the congregation in powerful worship experiences that honor God.",
-      details: [
-        "Choir practice sessions",
-        "Musical instrument training",
-        "Worship workshops",
-        "Special music events",
-        "Recording ministry"
+        "Weekly men's breakfast meeting - Thursdays"
       ]
     },
     {
       icon: <Baby size={40} />,
-      title: "Children's Ministry",
+      title: "Sunday School/ Teens Ministry",
       description: "Nurturing the next generation with biblical foundations in a fun, engaging environment.",
       details: [
         "Sunday school programs",
-        "Vacation Bible School",
-        "Children's choir",
-        "Bible quiz competitions",
-        "Holiday special events"
+        "Vacation Bible School - (during holidays)",
+        "Nex Gen Worship Team"
       ]
     },
     {
       icon: <Globe size={40} />,
-      title: "Missions & Outreach",
-      description: "Sharing God's love locally and globally through service, evangelism, and support.",
+      title: "Missions & Outreach (G-318)",
+      description: "Go ye and make disciples of all nations.",
       details: [
         "Local evangelism programs",
-        "Mission trips",
-        "Community service projects",
-        "Humanitarian aid initiatives",
-        "Church planting support"
+        "Missions"
       ]
     }
   ];

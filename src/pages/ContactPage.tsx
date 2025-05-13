@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import PageBanner from '../components/common/PageBanner';
 
 const ContactPage: React.FC = () => {
@@ -36,61 +36,16 @@ const ContactPage: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-serif font-bold text-church-blue mb-6">Send Us a Message</h2>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-2">Full Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="input-field"
-                    required
-                  />
-                </div>
+              
                 
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Email Address</label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="input-field"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-gray-700 mb-2">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="input-field"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-gray-700 mb-2">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="input-field"
-                    required
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-gray-700 mb-2">Your Message</label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="input-field"
-                    required
-                  ></textarea>
-                </div>
-                
-                <button type="submit" className="btn btn-primary w-full flex items-center justify-center">
-                  <Send size={18} className="mr-2" />
-                  Send Message
-                </button>
-              </form>
+                 <a
+                   href="https://wa.me/254726169429?text=Hello%20Prevailing%20Word%20Church%2C%20I%20would%20like%20to%20get%20in%20touch."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="btn btn-primary w-full flex items-center justify-center">
+                    <MessageCircle size={18} className="mr-2" />
+                        Send Message
+                     </a>
             </div>
 
             {/* Contact Information */}
